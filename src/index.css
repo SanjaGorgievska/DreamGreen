@@ -36,6 +36,13 @@ form button, form h5{
   top: 0;
   height: 70px;
 }
+#categories 
+{
+  margin-top:70px;
+  width:1300px;
+  margin-left:50px;
+ 
+}
 
 #dream {
   margin-top:-65px;
@@ -43,6 +50,18 @@ form button, form h5{
   
 
 }
+
+#promoColors{
+  background-color: red;
+}
+
+#promotions
+{
+  margin-top:80px;
+  margin-left:-60px;
+  margin-right:60px;
+}
+
 
 
 

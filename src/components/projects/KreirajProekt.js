@@ -23,27 +23,31 @@ class KreirajProekt extends Component {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
-      <div className="container" id="formAction">
-        <form className=""  onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Пријава</h5>
-          <div className="input-field">
+      <div className="container">
+        <form className="white" onSubmit={this.handleSubmit}>
+          <h5 className="grey-text text-darken-3" id="kreiraj">Додај податоци за твоето ново еко-дело</h5>
+          <div className="input-field" id="kreirajnov">
             <input type="text" id='title' onChange={this.handleChange} />
-            <label htmlFor="title">Име</label>
+            <label htmlFor="title">Наслов на еко делото</label>
           </div>
           <div className="input-field">
             <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
-            <label htmlFor="content">Презиме</label>
+            <label htmlFor="content">Содржина на активноста</label>
           </div>
-          <div className="input-field">
-            <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
-            <label htmlFor="content">Краток опис</label>
+
+          <div>
+          <h6 className="grey-text text-darken-3" id="kreiraj">Прикачи слика како доказ за еко-актот</h6>
+               <input type="file"/>  
+               <button class="btn waves-effect green lighten-1">Прикачи слика</button>
+               </div>
+          <div className="input-field" id="proekt123">
+            <button className="btn green lighten-1" id="kopche">Креирај</button>
           </div>
 
             
 
-          <div className="input-field">
-            <button className="btn green lighten-1">Креирај</button>
-          </div>
+
+
         </form>
       </div>
     )

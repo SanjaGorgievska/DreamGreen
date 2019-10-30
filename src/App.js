@@ -8,6 +8,8 @@ import SignUp from './components/auth/SignUp'
 import About from './components/zanas/About'
 import KreirajProekt from './components/projects/KreirajProekt'
 import Sanci from './components/dashboard/Sanci'
+import Home from './components/doma/Home'
+
 
 class App extends Component {
   render() {
@@ -23,6 +25,8 @@ class App extends Component {
             <Route path='/carousel' component={Sanci} />
             <Route path='/create' component={KreirajProekt} />
             <Route path='/zaNas' component={About} />
+            <Route path='/promotions' component={Home} />
+
           </Switch>
         </div>
       </BrowserRouter>
