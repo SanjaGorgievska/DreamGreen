@@ -9,6 +9,7 @@ import About from './components/zanas/About'
 import KreirajProekt from './components/projects/KreirajProekt'
 import Sanci from './components/dashboard/Sanci'
 import Home from './components/doma/Home'
+// Natasha Stojanova
 
 
 class App extends Component {
