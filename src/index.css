@@ -1,0 +1,92 @@
+html{
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif ;
+  background: url(/img/vrv.jpg);   
+  background-size: 37%;
+  background-position: top;
+  background-color: #95e8f3;
+  min-height: 100%;
+
+}
+
+form{
+  padding: 20px;
+  margin-top: 60px;
+}
+
+#formAction{
+  margin-top: 70px;
+
+  margin-left:800px;
+  width:400px;
+  
+}
+
+form button, form h5{
+  margin: 20px 0;
+}
+
+#menu{
+  position:fixed;
+  top: 0;
+  height: 70px;
+}
+
+#dream {
+  margin-top:-65px;
+  font-family:fantasy;
+  
+
+}
+
+
+
+#lista
+{
+  margin-top: 70px;
+}
+
+#izvestuvanje
+{
+  margin-top: 70px;
+  
+}
+
+#signin1
+{
+  margin-top:-40px;  
+}
+
+#aboutUs
+{
+  color: brown;
+  font-family:'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  margin-left: 700px;
+  margin-top: 180px;
+  width:600px;
+    
+}
+
+#aboutContent{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  
+}
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+  color: #ec407a !important;
+}
