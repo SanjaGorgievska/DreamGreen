@@ -1,39 +1,26 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ReactDOM from 'react-dom';
+import Fragment from 'react-dot-fragment';
 
 
-const Home = ({}) =>{
+
+
+const Home = ({}) => {
   return (
-
-      <div>
-
-<div class="row">
-
-<div class="col s1 m1 l2">
+  
+<div>
+  
+<div class="col s1 m1 l2" id="categories">
 
 
-</div>
-<div class="col s2 m2 l9" id="categories">
-<nav>
-  <div class="nav-wrapper" id="promoColors" >
-    <a href="#" class="brand-logo left">Категории</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="sass.html">Актуелно</a></li>
-      <li><a href="badges.html">Производи</a></li>    
-      <li><a href="collapsible.html">Услуги</a></li>
-      <li><a href="collapsible.html">Еко промоции</a></li>
+    
 
-    </ul>
-  </div>
-</nav>
-
-</div>
-<div class="col s1 m1 l2">
-</div>
-</div>
 
       <div class="row">
       <div class="col s2 m2 l2"></div>
@@ -132,6 +119,8 @@ const Home = ({}) =>{
 </div>
   </div>
 
+  </div>
+
  
 
 
@@ -190,16 +179,16 @@ const Home = ({}) =>{
   </div>
 </div>
 
-    </div>
-
-
-    
-
-    
    
+
+
+    
+
+</div>  
+
 
   )
 }
 
 
-export default Home
+export default Home;

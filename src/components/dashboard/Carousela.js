@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 
-class Sanci extends React.Component {
+class Carousela extends React.Component {
     render() {
         return (
             <Carousel>
@@ -27,4 +27,4 @@ class Sanci extends React.Component {
 }
 
 
-export default Sanci;
+export default Carousela;

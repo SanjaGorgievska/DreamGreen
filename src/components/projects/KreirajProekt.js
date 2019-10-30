@@ -24,8 +24,15 @@ class KreirajProekt extends Component {
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
       <div className="container">
+        
         <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3" id="kreiraj">Додај податоци за твоето ново еко-дело</h5>
+          
+          <h5 className="grey-text text-darken-3" id="kreiraj"><b>Додај податоци за вашето ново еко-дело</b> </h5>
+         
+          <p>
+          <h6 className="grey-text text-darken-3" id="kreiraj">Внесете информации за настанот</h6>
+
+      </p>
           <div className="input-field" id="kreirajnov">
             <input type="text" id='title' onChange={this.handleChange} />
             <label htmlFor="title">Наслов на еко делото</label>
@@ -35,15 +42,60 @@ class KreirajProekt extends Component {
             <label htmlFor="content">Содржина на активноста</label>
           </div>
 
+          <p>
+          <h6 className="grey-text text-darken-3" id="kreiraj">Одберете категорија во која спаѓа настанот</h6>
+
+      </p>
+
+
+
+          <p>
+      <label>
+        <input type="checkbox" />
+        <span>Засадено дрво</span>
+      </label>
+      </p>
+
+      <p>
+      <label>
+        <input type="checkbox" />
+        <span>Исчистен отпад</span>
+      </label>
+      </p>
+
+      <p>
+      <label>
+        <input type="checkbox" />
+        <span>Купено кафе со свој термос</span>
+      </label>
+      </p>
+  
+      <p>
+      <label>
+        <input type="checkbox" />
+        <span>Користење на реискористлив еколошки производ</span>
+      </label>
+      </p>
+
+      <p>
+      <label>
+        <input type="checkbox" />
+        <span>Ваша идеја:<input placeholder="Краток опис на идејата" id="first_name" type="text" class="validate"/></span>
+      </label>
+      
+      </p>
+    
+   
+       
           <div>
-          <h6 className="grey-text text-darken-3" id="kreiraj">Прикачи слика како доказ за еко-актот</h6>
+          <h6 className="grey-text text-darken-3" id="kreiraj">Прикачете слика како доказ за еко-актот</h6>
                <input type="file"/>  
                <button class="btn waves-effect green lighten-1">Прикачи слика</button>
                </div>
           <div className="input-field" id="proekt123">
             <button className="btn green lighten-1" id="kopche">Креирај</button>
           </div>
-
+          
             
 
 

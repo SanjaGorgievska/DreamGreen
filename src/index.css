@@ -38,11 +38,13 @@ form button, form h5{
 }
 #categories 
 {
-  margin-top:70px;
+  margin-top:140px;
   width:1300px;
-  margin-left:50px;
+  margin-left:1px;
+  margin-right:20px;
  
 }
+
 
 #dream {
   margin-top:-65px;
