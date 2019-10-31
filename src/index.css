@@ -104,7 +104,9 @@ form button, form h5{
   margin-top:190px;
   
 }
-
+#contactFoo{
+  margin-left:290px;
+}
 #aboutContent{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
   
