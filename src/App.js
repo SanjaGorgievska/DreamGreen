@@ -26,7 +26,7 @@ class App extends Component {
             <Route path='/project/:id' component={DetaliProekt} />
             <Route path='/signin' component={SignIn} />
             <Route path='/signup' component={SignUp} />
-            <Route path='/carousel' component={Carousela} />
+            <Route path='/home' component={Carousela} />
             <Route path='/create' component={KreirajProekt} />
             <Route path='/zaNas' component={About} />
             <Route path='/promotions' component={Home} />

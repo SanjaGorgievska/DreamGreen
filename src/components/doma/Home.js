@@ -3,24 +3,20 @@ import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import ReactDOM from 'react-dom';
-import Fragment from 'react-dot-fragment';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
 
 const Home = ({}) => {
+  function Notify() {   
+    toast("Ставено во кошничка!" );  }
   return (
   
 <div>
   
 <div class="col s1 m1 l2" id="categories">
-
-
-    
-
 
       <div class="row">
       <div class="col s2 m2 l2"></div>
@@ -30,7 +26,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">15% кафе за носење<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Добијте попуст на кафе<i class="material-icons right">close</i></span>
@@ -47,7 +43,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">48% јадење по избор<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -62,7 +58,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">30% масажа на грб<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -81,7 +77,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">15% патување<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -94,8 +90,8 @@ const Home = ({}) => {
     <img class="activator"  width="318" height="260"src="https://b3h2.scene7.com/is/image/BedBathandBeyond/BETTER%20MSWP%205172644?$content$&wid=832&hei=520"/>
   </div>
   <div class="card-content">
-    <span class="card-title activator grey-text text-darken-4">10% процесор за храна<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <span class="card-title activator grey-text text-darken-4">10% блендер за храна<i class="material-icons right">more_vert</i></span>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -110,7 +106,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">20% храна за миленик<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -120,14 +116,6 @@ const Home = ({}) => {
   </div>
 
   </div>
-
- 
-
-
-
-
-
-
 
 </div>
 
@@ -139,7 +127,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">10% сервис за лаптоп<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -154,7 +142,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">20% очен преглед<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -169,7 +157,7 @@ const Home = ({}) => {
   </div>
   <div class="card-content">
     <span class="card-title activator grey-text text-darken-4">15% игротека<i class="material-icons right">more_vert</i></span>
-    <p><a href="#">Стави во кошничка  <i class="tiny material-icons">shopping_cart</i></a></p>
+    <p><a href="#"><ToastContainer /><a onClick={Notify}>Стави во кошничка</a><i class="tiny material-icons">shopping_cart</i></a></p>
   </div>
   <div class="card-reveal">
     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>

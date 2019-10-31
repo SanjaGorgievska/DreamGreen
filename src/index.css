@@ -26,6 +26,9 @@ form{
   width:400px;
   
 }
+#toast{
+  margin-top:100px;
+}
 
 form button, form h5{
   margin: 20px 0;
@@ -91,6 +94,15 @@ form button, form h5{
   margin-top: 180px;
   width:600px;
     
+}
+
+.carouslePhoto{
+  margin-top:70px;
+}
+
+.footer{
+  margin-top:190px;
+  
 }
 
 #aboutContent{
